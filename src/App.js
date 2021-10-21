@@ -1,21 +1,13 @@
 import './App.css';
-import { Sayac } from './components/Sayac';
+import { Navbar } from './components/Navbar';
+
 
 
 function App() {
 
-  let fatihinSoyadi = 'kose'
-
-  let Selamla = (isim) =>{
-    return "Merhaba "+isim
-  }
-
-
-
-
   return (
     <div className="App">
-      <Sayac fs={fatihinSoyadi} sg={fatihinSoyadi} fatihinselami={Selamla}></Sayac>
+      <Navbar></Navbar>
     </div>
   );
 }
