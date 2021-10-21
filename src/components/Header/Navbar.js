@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../../Assets/images/logo.png'
+import { ChildNav } from './ChildNav'
 
 export const Navbar = () => {
     return (
@@ -22,6 +23,7 @@ export const Navbar = () => {
                         <a href="/"><i class="fas fa-user fs-4"></i> </a>
                 </div>
             </nav>
+            <ChildNav></ChildNav>
         </div>
     )
 }

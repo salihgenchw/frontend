@@ -1,6 +1,6 @@
 
 import { Navbar } from './components/Header/Navbar';
-
+import {useState, useEffect} from 'react'
 
 
 
