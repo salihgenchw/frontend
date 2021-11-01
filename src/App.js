@@ -2,14 +2,9 @@
 import { Navbar } from './components/Header/Navbar';
 import {useState, useEffect} from 'react'
 
-
-
 function App() {
 
-
   let [books, setbooks] = useState(null);
-
-
 
   useEffect(()=>{
 
