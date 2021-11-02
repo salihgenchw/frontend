@@ -11,7 +11,7 @@ function App(props) {
     <div className="App">
       <Navbar/>
       <Route exact path="/" component={Products}/>
-      <Route path="/fav" component={Fav}/>
+      <Route path="/favorilistesi" component={Fav}/>
     </div>
   );
 }

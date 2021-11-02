@@ -7,7 +7,7 @@ import { ToastContainer } from "react-toastify";
 const Products = (props) => {
   return (
     <div className="container">
-      <Link to="/fav">Favorilerim</Link>
+      <Link to="/favorilistesi">Favorilerim</Link>
       <div className="row">
         {props.bookList.map((book) => (
           <div className="col-lg-3 col-md-6 col-sm-6">
