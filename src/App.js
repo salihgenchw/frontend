@@ -1,30 +1,25 @@
-
 import { Navbar } from './components/Header/Navbar';
-import {useState, useEffect} from 'react'
-
-function App() {
-
-  let [books, setbooks] = useState(null);
-
-  useEffect(()=>{
-
-    async function loadData(){
-      let jresponse= await fetch("http://localhost:1881/books");
-      let data=await jresponse.json();
-
-      setbooks(data);
-    }
-
-    loadData();
-
-  },[])
+import {Route} from "react-router-dom"
+import { connect } from 'react-redux';
+import Products from './components/Products';
+import Fav  from './components/Fav';
 
 
+function App(props) {
+  // console.log(props.bookList);
   return (
     <div className="App">
-      <Navbar data={books}></Navbar>
+      <Navbar/>
+      <Route exact path="/" component={Products}/>
+      <Route path="/fav" component={Fav}/>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    bookList : state.bookList
+  }
+}
+
+export default connect(mapStateToProps)(App);

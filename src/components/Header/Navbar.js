@@ -1,15 +1,7 @@
 import React from 'react'
 import Logo from '../../Assets/images/logo.png'
-import { ChildNav } from './ChildNav'
 
-export const Navbar = (props) => {
-
-
-    if(!props){
-        console.log(props);
-    }
-
-    
+export const Navbar = () => {    
     
     return (
         <div>
@@ -31,7 +23,6 @@ export const Navbar = (props) => {
                         <a href="/"><i className="fas fa-user fs-4"></i> </a>
                 </div>
             </nav>
-            <ChildNav></ChildNav>
         </div>
     )
 }
