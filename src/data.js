@@ -207,6 +207,6 @@ export const data =[
         "Seller":"CodeBook Store",
         "Type":"Yazılım",
         "Stock":false,
-        "img":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.in%2FYou-Dont-Know-Set-Volumes%2Fdp%2F9352136268&psig=AOvVaw31wjh2oi4PtuC9Cnqeboo6&ust=1634764054090000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKif-uew1_MCFQAAAAAdAAAAABAS"
+        "img":"https://images-na.ssl-images-amazon.com/images/I/71mKvD89oEL.jpg"
     }
 ]
